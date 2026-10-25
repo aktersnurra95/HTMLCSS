@@ -14,7 +14,7 @@
   box-sizing: border-box;
 }
 
-/*premade block for auto-hiding header, works only on chromium based browsers*/
+/*premade block for auto-hiding header, works only on chromium based browsers
 html {
   container-type: scroll-state;
 
@@ -29,6 +29,9 @@ html {
     }
   }
 }
+Removed in final version because it is chromium only
+and we want a similar behaviour in all browsers
+*/
 
 body {
   margin: 0;
@@ -42,6 +45,7 @@ header {
   min-width: 300px;
   top: 0px;
   background-color: var(--main-bg-color);
+  z-index: 1;
 
   .header-content {
     width: min(100% - 40px, 1080px);
