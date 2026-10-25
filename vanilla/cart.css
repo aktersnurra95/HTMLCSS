@@ -79,6 +79,7 @@
   padding: 20px;
   border: 1px solid #000;
   background-color: var(--content-bg-color);
+  z-index: 1;
 
   h2 {
     margin-top: 0px;

@@ -101,19 +101,6 @@ main {
   }
 }
 
-.return-link {
-  position: relative;
-  top: 32px;
-  left: 20px;
-  text-decoration: none;
-  font-size: small;
-  color: #666;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
 .content {
   padding: 50px 50px;
 
@@ -212,6 +199,19 @@ h2.title {
     &::-webkit-inner-spin-button {
       opacity: 1;
     }
+  }
+}
+
+.return-link {
+  position: relative;
+  top: 32px;
+  left: 20px;
+  text-decoration: none;
+  font-size: small;
+  color: #666;
+
+  &:hover {
+    text-decoration: underline;
   }
 }
 
