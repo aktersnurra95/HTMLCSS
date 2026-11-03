@@ -1,0 +1,70 @@
+main {
+  article {
+    /*hide from viewport*/
+    display: none;
+  }
+
+  /*applies to all articles with ID matching URL ID*/
+  article:target {
+    display: block;
+  }
+
+  /* & = me = main, if me (main) does not have an article as target, then apply to article with #start*/
+  &:not(:has(:target)) article#start {
+    display: block;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: verdana;
+}
+
+header {
+  padding: 20px;
+  background-color: coral;
+
+  h1 {
+    color: maroon;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  a {
+    color: maroon;
+    text-decoration: none;
+    padding-right: 10px;
+  }
+}
+
+main {
+  /*set width to the smallest of the values depending on viewport size*/
+  width: min(100% - 40px, 900px);
+  margin: 0 auto;
+
+  img {
+    max-width: 80%;
+    aspect-ratio: 16 / 9;
+    /*crop image when adjusting aspect ratio*/
+    object-fit: cover;
+    margin: auto;
+  }
+}
+
+footer {
+  background-color: ghostwhite;
+  padding: 20px;
+  text-align: center;
+}
+
+/*sticky footer*/
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
