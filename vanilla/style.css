@@ -30,7 +30,7 @@ html {
   }
 }
 Removed in final version because it is chromium only
-and we want a similar behaviour in all browsers
+and we prefer a similar behaviour in all browsers
 */
 
 body {
